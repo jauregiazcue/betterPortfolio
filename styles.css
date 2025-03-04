@@ -1,5 +1,44 @@
-
 body {
     background-color: black;
     color: white;
+}
+
+.vl {
+    border-right: 2px solid white;
+    height: fit-content;
+}
+
+header {
+    display: flex;
+}
+
+header li {
+    display: block;
+    float: right;
+    margin-right: 5%;
+    font-size:xx-large;
+}
+
+header table {
+    width: 100%;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+/* visited link */
+header a:visited {
+    color: white;
+}
+
+/* mouse over link */
+header a:hover {
+    color: gray;
+}
+
+/* selected link */
+header a:active {
+    color: gray;
 }
