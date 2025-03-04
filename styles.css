@@ -42,3 +42,27 @@ header a:hover {
 header a:active {
     color: gray;
 }
+
+main {
+    width: 70%;
+    margin: 0 auto;
+}
+
+footer {
+    text-align: center;
+    margin: 0 auto;
+    background-color: gray;
+    
+}
+
+footer li {
+    display: inline;
+    font-size: 2em;
+}
+footer ul {
+    margin-bottom: 0;
+}
+
+footer p {
+    margin-top : 0;
+}
