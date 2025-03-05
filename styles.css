@@ -200,16 +200,21 @@ footer p {
     background: #eabe71;
   }
 }
-
-.experience {
-  margin: 0 auto;
-  width: 100%;
+@media only screen and (min-width: 700px) {
+  .experienceAndEducation {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+  }
+  .experience  {
+    width: 50%;
+    vertical-align: top;
+    height:100%;
+  }
 }
 
-.experience td {
-  width: 50%;
-  vertical-align: top;
-}
+
+
 
 .experience h1,
 h2,
