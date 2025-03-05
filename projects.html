@@ -3,7 +3,7 @@
 
 <head>
 	<!-- Get the style from styles.css -->
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="css/styles.css">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 		integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -24,52 +24,19 @@
 </head>
 
 <body>
-	<header>
-		<table>
-			<tr>
-				<td>
-					<h1>Kai Jauregi</h1>
-					<h2>Gameplay and Tools Programmer</h2>
-				</td>
-				<td><span class="loader"></span></td>
-				<td>
-					<nav>
-						<ul>
-							<li><a href="contact.html">Contact</a></li>
-							<li><a href="projects.html">Projects</a></li>
-							<li><a href="index.html">Home</a></li>
-						</ul>
-					</nav>
-				</td>
-			</tr>
-		</table>
-	</header>
-	<hr>
+	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+	<script>
+		$(function () {
+			$("#header").load("header.html");
+			$("#footer").load("footer.html");
+		});
+	</script>
+	<div id="header"></div>
 
 	<main>
 		
 	</main>
-	<footer>
-		<hr>
-		<ul>
-			<li>
-				<a target="_blank" href="https://www.linkedin.com/in/jauregiazcue/">
-					<i class="fa-brands fa-linkedin"></i>
-				</a>
-			</li>
-			<li>
-				<a target="_blank" href="https://bsky.app/profile/jauregiazcue.bsky.social">
-					<i class="fa-brands fa-square-bluesky"></i>
-				</a>
-			</li>
-			<li>
-				<a target="_blank" href="https://github.com/jauregiazcue">
-					<i class="fa-brands fa-square-github"></i>
-				</a>
-			</li>
-		</ul>
-		<p>© Kai Jauregi Azcue. All rights reserved.</p>
-	</footer>
+	<footer id="footer"></footer>
 
 </body>
 

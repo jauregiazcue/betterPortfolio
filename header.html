@@ -1,0 +1,39 @@
+<body>
+	<header>
+		<table>
+			<tr>
+				<td>
+					<h1>Kai Jauregi</h1>
+					<h2>Gameplay and Tools Programmer</h2>
+				</td>
+				<td><span class="loader"></span></td>
+				<td>
+					<nav>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="projects.html">Projects</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+						<button class="openbtn" onclick="openNav()">☰ </button>
+						<div id="mySidepanel" class="sidepanel">
+							<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+							<a href="index.html">Home</a>
+							<a href="projects.html">Projects</a>
+							<a href="contact.html">Contact</a>
+						</div>
+					</nav>
+				</td>
+			</tr>
+		</table>
+	</header>
+	<hr>
+	<script>
+		function openNav() {
+			document.getElementById("mySidepanel").style.width = "100%";
+		}
+
+		function closeNav() {
+			document.getElementById("mySidepanel").style.width = "0";
+		}
+	</script>
+</body>
