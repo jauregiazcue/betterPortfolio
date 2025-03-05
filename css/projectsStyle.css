@@ -1,0 +1,57 @@
+.projectsMain h1 {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.projectsMain h2 {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.projectsMain main {
+
+    display: flex;
+
+}
+
+.projectsMain section {
+    width:40%;
+    
+}
+
+.projectsMain aside {
+    width: 50%;
+    margin: auto auto;
+    align-items: center;
+}
+
+.projectsMain iframe {
+    width: 50vw;
+    height: 50vh;
+    border-radius: 5%;
+    border-width: 5px;
+    border-color: white;
+}
+
+.projectsMain ul {
+    display: inline-block;
+    margin: 7% auto;
+    list-style: none;
+}
+
+.projectsMain li {
+    margin-bottom: 5%;
+}
+
+.projectsMain li:before {
+    content: '';
+    display: inline-block;
+    padding: 10px 10px 5px 15px;
+    background-image: url('../liPointer.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: -35px;
+  }
+

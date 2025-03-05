@@ -21,41 +21,42 @@ h3 {
 }
 
 
-header {
+.mainHeader {
   display: flex;
+  
 }
 
-header h1,
+.mainHeader h1,
 h2 {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-header table {
+.mainHeader table {
   width: 100%;
 }
 
-header a {
+.mainHeader a {
   color: white;
   text-decoration: none;
 }
 
 /* visited link */
-header a:visited {
+.mainHeader a:visited {
   color: white;
 }
 
 /* mouse over link */
-header a:hover {
+.mainHeader a:hover {
   color: gray;
 }
 
 /* selected link */
-header a:active {
+.mainHeader a:active {
   color: gray;
 }
 
-main {
+.mainIndex {
   width: 70%;
   margin: 0 auto;
 }
@@ -241,12 +242,12 @@ h3 {
   .openbtn { 
     display:none;
   }
-  header ul {
+  .mainHeader ul {
     display: flex;
     justify-content: flex-end;
   }
   
-  header li {
+  .mainHeader li {
     display: block;
     float: right;
     margin-right: 5%;
@@ -285,7 +286,7 @@ h3 {
     background-color: rgba(0, 0, 0, 0);
   }
 
-  header ul {
+  .mainHeader ul {
     display: none;
   }
 
@@ -308,12 +309,12 @@ h3 {
   .openbtn { 
     display:none;
   }
-  header ul {
+  .mainHeader ul {
     display: flex;
     justify-content: flex-end;
   }
   
-  header li {
+  .mainHeader li {
     display: block;
     float: right;
     margin-right: 5%;
