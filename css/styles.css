@@ -166,7 +166,7 @@ h3 {
   font-size: medium;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1440px) {
   .profilePicture {
     width: 25%;
     height: 25%;

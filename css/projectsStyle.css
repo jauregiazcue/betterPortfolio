@@ -1,3 +1,5 @@
+
+
 .projectsMain h1 {
     font-size: 30px;
     margin-top: 30px;
@@ -9,6 +11,7 @@
     margin-top: 0;
     margin-bottom: 0;
 }
+
 
 .projectsMain main {
 
@@ -52,11 +55,31 @@
 
 .toBigUL {
     display: inline-block;
-    margin: 0 0;
+    margin: 0 7px;
     list-style: none;
     height: 86vh;
-    overflow-y: auto;
+    overflow-y: scroll;
+
+   
 }
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+   ::-webkit-scrollbar-track {
+    background: rgb(85, 85, 85);
+    border-radius: 10px;
+  }
+  
+   ::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
+  }
+  
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: lightgray ;
+  }
 
 .toBigUL ul {
     list-style: none;
