@@ -23,7 +23,6 @@ h3 {
 
 .mainHeader {
   display: flex;
-  
 }
 
 .mainHeader h1,
@@ -225,7 +224,7 @@ h3 {
 
 
 
-@media only screen and (max-width: 1000px) and (min-width: 700px) {
+@media only screen and (max-width: 1440px) and (min-width: 768px) {
   .profilePicture {
     width: 141px;
     height: 141px;
@@ -261,7 +260,7 @@ h3 {
 
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
   .profilePicture {
     width: 50%;
     height: 50%;
@@ -293,7 +292,7 @@ h3 {
   
 
 }
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 768px) {
   .experienceAndEducation {
     margin: 0 auto;
     width: 100%;

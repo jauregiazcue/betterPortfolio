@@ -17,8 +17,8 @@
 }
 
 .projectsMain section {
-    width:40%;
-    
+    width: 40%;
+
 }
 
 .projectsMain aside {
@@ -35,10 +35,38 @@
     border-color: white;
 }
 
-.projectsMain ul {
+.projectsMain img {
+    width: 50vw;
+    height: 50vh;
+    border-style: solid;
+    border-radius: 5%;
+    border-width: 5px;
+}
+
+
+.firstUl ul {
     display: inline-block;
-    margin: 7% auto;
+    margin: 0 0;
     list-style: none;
+}
+
+.toBigUL {
+    display: inline-block;
+    margin: 0 0;
+    list-style: none;
+    height: 86vh;
+    overflow-y: auto;
+}
+
+.toBigUL ul {
+    list-style: none;
+}
+
+.firstUl {
+    display: inline-block;
+    margin: 7% 7%;
+    list-style: none;
+
 }
 
 .projectsMain li {
@@ -49,9 +77,8 @@
     content: '';
     display: inline-block;
     padding: 10px 10px 5px 15px;
-    background-image: url('../liPointer.png');
+    background-image: url('../assets/images/liPointer.png');
     background-size: contain;
     background-repeat: no-repeat;
     margin-left: -35px;
-  }
-
+}
