@@ -110,6 +110,43 @@ footer p {
   color: black;
 }
 
+form  {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+
+}
+
+fieldset {
+  width: 80%;
+  border-radius: 5px;
+  border-width: 5px;
+  border-style: solid;
+
+}
+
+input,textarea {
+  width: 100%;
+  border-radius: 25px;
+}
+
+textarea {
+  resize:none;
+  height: 50%;
+  max-height: 50vh;
+}
+
+.formButtons {
+  display: flex;
+  justify-content: center;
+}
+.formButtons button{
+  width: 100%;
+  height: 5vh;
+  border-radius: 100px;
+}
+
 .loader {
   display: block;
   width: 84px;
@@ -136,6 +173,25 @@ footer p {
   border-radius: 50%;
   background: #c38a37;
   transform: translate(0%, 25%);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(85, 85, 85);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: lightgray;
 }
 
 @keyframes fireAnimation {
@@ -179,14 +235,15 @@ h3 {
     display: flex;
     align-items: center;
   }
+
   .borderSpacer section {
     padding-left: 2%;
   }
-  
+
 }
 
 .sidepanel {
-  width:0;
+  width: 0;
   position: fixed;
   z-index: 1;
   height: 250px;
@@ -197,7 +254,7 @@ h3 {
   transition: 0.5s;
   padding-top: 60px;
   height: 100%;
-  
+
 }
 
 .sidepanel a {
@@ -238,14 +295,15 @@ h3 {
     align-items: center;
   }
 
-  .openbtn { 
-    display:none;
+  .openbtn {
+    display: none;
   }
+
   .mainHeader ul {
     display: flex;
     justify-content: flex-end;
   }
-  
+
   .mainHeader li {
     display: block;
     float: right;
@@ -280,7 +338,7 @@ h3 {
     border: none;
     float: right;
   }
-  
+
   .openbtn:hover {
     background-color: rgba(0, 0, 0, 0);
   }
@@ -289,9 +347,10 @@ h3 {
     display: none;
   }
 
-  
+
 
 }
+
 @media only screen and (min-width: 768px) {
   .experienceAndEducation {
     margin: 0 auto;
@@ -305,14 +364,15 @@ h3 {
     height: 100%;
   }
 
-  .openbtn { 
-    display:none;
+  .openbtn {
+    display: none;
   }
+
   .mainHeader ul {
     display: flex;
     justify-content: flex-end;
   }
-  
+
   .mainHeader li {
     display: block;
     float: right;
@@ -326,7 +386,9 @@ h3 {
     display: flex;
     align-items: center;
   }
+
   .borderSpacer section {
     padding-left: 2%;
   }
 }
+

@@ -35,13 +35,31 @@
 
 	<main>
 		<section>
-			<form action="mailto:jauregiazcue@gmail.com" method="post" >
-				<label for="subject">Name:</label><br>
-				<input type="text" id="subject" name="subject" placeholder="Write your name"><br>
-				<label for="body">Comment:</label><br>
-				<input type="text" id="body" name="body" size="50" placeholder="Write your comment"><br><br>
-				<input type="submit" value="Send">
-				<input type="reset" value="Reset">
+			<form>
+				<fieldset>
+					<legend>Contact Us!</legend>
+					<div>
+						<label for="name">Name:</label>
+						<br>
+						<input type="text" id="name" name="name" required>
+					</div>
+					<div>
+						<label for="email">Email:</label>
+						<br>
+						<input type="email" id="email" name="email" required>
+					</div>
+					<div>
+						<label for="message">Comment:</label>
+						<br>
+						<textarea name="message" rows="10" cols="30"></textarea>
+					</div>
+					<div class="formButtons">
+						<button type="submit">Send</button>
+						<button type="reset">Clean</button>
+					</div>
+				</fieldset>
+
+				
 			</form>
 
 		</section>

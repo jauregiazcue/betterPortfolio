@@ -25,24 +25,7 @@
 
 
 
-::-webkit-scrollbar {
-    width: 10px;
-}
 
-::-webkit-scrollbar-track {
-    background: rgb(85, 85, 85);
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: white;
-    border-radius: 10px;
-}
-
-
-::-webkit-scrollbar-thumb:hover {
-    background: lightgray;
-}
 
 .toBigUL ul {
     list-style: none;
@@ -94,6 +77,7 @@
 .projectsMain iframe {
     width: 90%;
     height: 90%;
+    border-style: solid;
     border-radius: 5%;
     border-width: 5px;
     border-color: white;
