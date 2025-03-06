@@ -10,22 +10,11 @@
     margin-bottom: 0;
 }
 
-
-
-
-
-
-
-
 .firstUl ul {
     display: inline-block;
     margin: 0 0;
     list-style: none;
 }
-
-
-
-
 
 .toBigUL ul {
     list-style: none;
@@ -62,13 +51,14 @@
 .projectsMain aside {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
 .projectsMain main {
 
     display: flex;
+    flex-direction: column;
     overflow: hidden;
     justify-content: center;
     align-items: center;
@@ -95,7 +85,7 @@
     .projectsMain main {
 
         display: flex;
-
+        flex-direction:row;
     }
 
     .projectsMain section {
