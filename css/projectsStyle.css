@@ -162,10 +162,10 @@
 
 .selection article {
     display: flex;
-    background-color: white;
+    background-color: black;
     border-style: solid;
     border-radius: 5px;
-
+    border-color: #c38a37;
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -173,10 +173,11 @@
 
 .selection button {
     font-size: large;
-    background-color: white;
+    background-color: black;
     border:none;
+    color:#c38a37;
 }
 .selection button:hover {
-    background-color: lightgrey;
+    color:#eabe71;
 }
 

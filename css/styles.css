@@ -80,6 +80,7 @@ main a:active {
 }
 
 footer {
+  position:fixed;
   text-align: center;
   margin: 0 auto;
   left: 0;
