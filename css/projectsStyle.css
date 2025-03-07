@@ -48,6 +48,32 @@
 
 }
 
+.PS5 {
+    display: block;
+}
+
+.UnrealEngine {
+    display: block;
+}
+
+.Unity {
+    display: block;
+}
+
+.OpenGL {
+    display: block;
+}
+
+.AI {
+    display: block;
+}
+
+.All {
+    display: block;
+}
+
+
+
 .projectsMain aside {
     width: 100%;
     display: flex;
@@ -85,7 +111,7 @@
     .projectsMain main {
 
         display: flex;
-        flex-direction:row;
+        flex-direction: row;
     }
 
     .projectsMain section {

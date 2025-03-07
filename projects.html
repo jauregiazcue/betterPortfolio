@@ -33,13 +33,21 @@
 		});
 	</script>
 	<div id="header"></div>
-
+	<header>
+		<button onclick="changeActiveClass('All')">All</button>
+		<button onclick="changeActiveClass('PS5')">PS5</button>
+		<button onclick="changeActiveClass('UnrealEngine')">Unreal Engine</button>
+		<button onclick="changeActiveClass('Unity')">Unity</button>
+		<button onclick="changeActiveClass('OpenGL')">OpenGl</button>
+		<button onclick="changeActiveClass('AI')">AI</button>
+	</header>
+	
 	<main class="projectsMain">
 		<!-- ----------------- Born To Rise ----------------- -->
-		<article>
+		<article class="All UnrealEngine">
 			<header>
 				<h1>Born To Rise</h1>
-				<h2>Unreal 4 C++ Perforce
+				<h2>Unreal Engine 4 C++ Perforce
 					<span class="extraInformation"> • Sep 2022 - Jul 2023</span>
 				</h2>
 				<h3>2.5 Platformer. Available in Steam. Made by Racoons Making Games</h3>
@@ -63,11 +71,11 @@
 				</aside>
 
 			</main>
-
+			<hr>
 		</article>
-		<hr>
+
 		<!-- ----------------- LoreNomicon ----------------- -->
-		<article>
+		<article class="All PS5 OpenGL AI">
 			<header>
 				<h1>LoreNomicon</h1>
 				<h2>PS5 C++ GitHub
@@ -155,7 +163,9 @@
 						<ul>
 							<li>Throw functionality</li>
 							<li>Interaction with enemy weaknesses</li>
-							<ul><li>Change enemy path with food weakness from player to meat position</li></ul>
+							<ul>
+								<li>Change enemy path with food weakness from player to meat position</li>
+							</ul>
 						</ul>
 						<li>Book</li>
 						<ul>
@@ -181,11 +191,11 @@
 				</aside>
 
 			</main>
-
+			<hr>
 		</article>
-		<hr>
+		
 		<!-- ----------------- Palace Engine ----------------- -->
-		<article>
+		<article class="All OpenGL">
 			<header>
 				<h1>Palace Engine</h1>
 				<h2>OpenGL C++ GitHub
@@ -208,274 +218,306 @@
 
 					<iframe src="https://www.youtube.com/embed/IxGubT8ZGrg?si=ceMnEoCHr-9PVPPZ"></iframe>
 				</aside>
+				<hr>
+			</main>
+			
+		</article>
+		<!-- ----------------- Castle Engine ----------------- -->
+		<article class="All PS5">
+			<header>
+				<h1>Castle Engine</h1>
+				<h2>PS5 C++ GitHub
+					<span class="extraInformation"> • Sep 2023 - Dic 2023</span>
+				</h2>
+				<h3>Custom PS5 Engine made by me in Sheffield Hallam University
+				</h3>
+			</header>
+			<main>
+				<section>
+					<ul class="firstUl">
+						<li>Model Loader with Json</li>
+						<li>Texture Loader with Json</li>
+						<li>Level Editor </li>
+						<ul>
+							<li>
+								Add, Update, Save and Delete Scenes
+							</li>
+							<li>
+								Add, Update, Save and Delete GameObjects
+							</li>
+						</ul>
+					</ul>
+				</section>
+				<aside>
+
+					<img alt="Castle Engine Picture" src="assets/gifs/ps5.gif">
+				</aside>
 
 			</main>
 			<hr>
-			<!-- ----------------- Castle Engine ----------------- -->
-			<article>
-				<header>
-					<h1>Castle Engine</h1>
-					<h2>PS5 C++ GitHub
-						<span class="extraInformation"> • Sep 2023 - Dic 2023</span>
-					</h2>
-					<h3>Custom PS5 Engine made by me in Sheffield Hallam University
-					</h3>
-				</header>
-				<main>
-					<section>
-						<ul class="firstUl">
-							<li>Model Loader with Json</li>
-							<li>Texture Loader with Json</li>
-							<li>Level Editor </li>
+		</article>
+		
+		<!-- ----------------- Fortress Engine ----------------- -->
+		<article class="All OpenGL">
+			<header>
+				<h1>Fortress Engine</h1>
+				<h2>OpenGL C++ GitHub
+					<span class="extraInformation"> • Sep 2023 - Dec 2023</span>
+				</h2>
+				<h3>Custom Voxel Engine made in OpenGL. Made by me
+				</h3>
+			</header>
+			<main>
+				<section>
+					<ul class="firstUl">
+						<li>World Generation</li>
+						<li>Culling</li>
+						<li>Colour picking for Voxel Updating</li>
+						<li>Collision detection</li>
+						<li>Octrees</li>
+						<li>Threads</li>
+					</ul>
+				</section>
+				<aside>
+
+					<img alt="Fortress Engine Picture" src="assets/gifs/FortressEngine.gif">
+				</aside>
+
+			</main>
+			<hr>
+		</article>
+		
+		<!-- ----------------- Multiagent System ----------------- -->
+		<article class="All OpenGL AI">
+			<header>
+				<h1>Multiagent System</h1>
+				<h2>ESAT Engine C++ IA GitHub
+					<span class="extraInformation"> • Sep 2022 - Dec 2023</span>
+				</h2>
+				<h3>Multiagent System AI with 3 movement algorithms. Made by me
+				</h3>
+			</header>
+			<main>
+				<section>
+					<ul class="firstUl">
+						<li>Units Creations</li>
+						<li>Units Movement System</li>
+						<ul>
+							<li>Random Movement</li>
+							<li>Deterministic Movement</li>
+							<li>Follower Movement</li>
+						</ul>
+						<li>Interface</li>
+						<ul>
+							<li>Add Units</li>
+							<li>Delete Units</li>
+							<li>Control Units</li>
 							<ul>
-								<li>
-									Add, Update, Save and Delete Scenes
-								</li>
-								<li>
-									Add, Update, Save and Delete GameObjects
-								</li>
+								<li>Change Movement System</li>
+								<li>Stop or Active all or any unit</li>
 							</ul>
 						</ul>
-					</section>
-					<aside>
+					</ul>
+				</section>
+				<aside>
 
-						<img alt="Castle Engine Picture" src="assets/gifs/ps5.gif">
-					</aside>
+					<img alt="Multiagent System Picture" src="assets/gifs/IAFirstProject.gif">
+				</aside>
 
-				</main>
-
-			</article>
+			</main>
 			<hr>
-			<!-- ----------------- Fortress Engine ----------------- -->
-			<article>
-				<header>
-					<h1>Fortress Engine</h1>
-					<h2>OpenGL C++ GitHub
-						<span class="extraInformation"> • Sep 2023 - Dec 2023</span>
-					</h2>
-					<h3>Custom Voxel Engine made in OpenGL. Made by me
-					</h3>
-				</header>
-				<main>
-					<section>
-						<ul class="firstUl">
-							<li>World Generation</li>
-							<li>Culling</li>
-							<li>Colour picking for Voxel Updating</li>
-							<li>Collision detection</li>
-							<li>Octrees</li>
-							<li>Threads</li>
+		</article>
+		
+		<!-- ----------------- Procedural World Generation ----------------- -->
+		<article class="All OpenGL AI">
+			<header>
+				<h1>Procedural World Generation</h1>
+				<h2>Palace Engine C++ IA GitHub
+					<span class="extraInformation"> • Jan 2023 - May 2023</span>
+				</h2>
+				<h3>World generation with multiagent system. Made by me
+				</h3>
+			</header>
+			<main>
+				<section>
+					<ul class="firstUl">
+						<li>World generation using Cellular Automata</li>
+						<ul>
+							<li>World Seeds</li>
+							<li>Three World Sizes</li>
 						</ul>
-					</section>
-					<aside>
-
-						<img alt="Fortress Engine Picture" src="assets/gifs/FortressEngine.gif">
-					</aside>
-
-				</main>
-
-			</article>
-			<hr>
-			<!-- ----------------- Multiagent System ----------------- -->
-			<article>
-				<header>
-					<h1>Multiagent System</h1>
-					<h2>ESAT Engine C++ IA GitHub
-						<span class="extraInformation"> • Sep 2022 - Dec 2023</span>
-					</h2>
-					<h3>Multiagent System AI with 3 movement algorithms. Made by me
-					</h3>
-				</header>
-				<main>
-					<section>
-						<ul class="firstUl">
-							<li>Units Creations</li>
-							<li>Units Movement System</li>
+						<li>Camera</li>
+						<ul>
+							<li>Zoom in and out</li>
+							<li>Follow entity that player will move to</li>
+						</ul>
+						<li>Multi Agent System for animals</li>
+						<ul>
+							<li>Calm State</li>
 							<ul>
 								<li>Random Movement</li>
-								<li>Deterministic Movement</li>
-								<li>Follower Movement</li>
 							</ul>
-							<li>Interface</li>
+							<li>Scape State</li>
 							<ul>
-								<li>Add Units</li>
-								<li>Delete Units</li>
-								<li>Control Units</li>
-								<ul>
-									<li>Change Movement System</li>
-									<li>Stop or Active all or any unit</li>
-								</ul>
+								<li>A* algorithm</li>
+							</ul>
+							<li>Persecute State</li>
+							<ul>
+								<li>A* algorithm</li>
 							</ul>
 						</ul>
-					</section>
-					<aside>
+						<li>Markov Chain</li>
+						<ul>
+							<li>Plants Grow</li>
+							<li>Tiles Update</li>
+						</ul>
 
-						<img alt="Multiagent System Picture" src="assets/gifs/IAFirstProject.gif">
-					</aside>
+					</ul>
+				</section>
+				<aside>
 
-				</main>
+					<img alt="Procedural World Generation Picture" src="assets/images/IAProject.png">
+				</aside>
 
-			</article>
+			</main>
 			<hr>
-			<!-- ----------------- Procedural World Generation ----------------- -->
-			<article>
-				<header>
-					<h1>Procedural World Generation</h1>
-					<h2>Palace Engine C++ IA GitHub 
-						<span class="extraInformation"> • Jan 2023 - May 2023</span>
-					</h2>
-					<h3>World generation with multiagent system. Made by me
-					</h3>
-				</header>
-				<main>
-					<section>
-						<ul class="firstUl">
-							<li>World generation using Cellular Automata</li>
-							<ul>
-								<li>World Seeds</li>
-								<li>Three World Sizes</li>
-							</ul>
-							<li>Camera</li>
-							<ul>
-								<li>Zoom in and out</li>
-								<li>Follow entity that player will move to</li>
-							</ul>
-							<li>Multi Agent System for animals</li>
-							<ul>
-								<li>Calm State</li>
-								<ul><li>Random Movement</li></ul>
-								<li>Scape State</li>
-								<ul><li>A* algorithm</li></ul>
-								<li>Persecute State</li>
-								<ul><li>A* algorithm</li></ul>
-							</ul>
-							<li>Markov Chain</li>
-							<ul>
-								<li>Plants Grow</li>
-								<li>Tiles Update</li>
-							</ul>
-							
+		</article>
+		
+		<!-- ----------------- Meteor Shower ----------------- -->
+		<article class="All Unity">
+			<header>
+				<h1>Meteor Shower</h1>
+				<h2>Unity C# GitHub
+					<span class="extraInformation"> • Apr 2022 - May 2022</span>
+				</h2>
+				<h3>Arcade-like Videogame. Made by me
+				</h3>
+			</header>
+			<main>
+				<section>
+					<ul class="firstUl">
+						<li>Enemy Wave System</li>
+						<li>Enemy</li>
+						<ul>
+							<li>Movement</li>
+							<li>Death</li>
+							<li>Colour Randomization</li>
 						</ul>
-					</section>
-					<aside>
+						<li>Player</li>
+						<ul>
+							<li>Simple Movement</li>
+							<li>Dash Attack</li>
+							<li>Death</li>
+						</ul>
+						<li>Game Feel</li>
+						<ul>
+							<li>Particles</li>
+							<li>Player Dash Colour Change</li>
+							<li>Camera Shake</li>
+							<li>UI</li>
+							<ul>
+								<li>Timer</li>
+								<li>Start State</li>
+								<li>Lose State</li>
+							</ul>
+							<li>Music</li>
+						</ul>
+					</ul>
+				</section>
+				<aside>
 
-						<img alt="Procedural World Generation Picture" src="assets/images/IAProject.png">
-					</aside>
+					<img alt="Meteor Shower Picture" src="assets/gifs/ScapeBox.gif">
+				</aside>
 
-				</main>
-
-			</article>
+			</main>
 			<hr>
-			<!-- ----------------- Meteor Shower ----------------- -->
-			<article>
-				<header>
-					<h1>Procedural World Generation</h1>
-					<h2>Unity C# GitHub
-						<span class="extraInformation"> • Apr 2022 - May 2022</span>
-					</h2>
-					<h3>Arcade-like Videogame. Made by me
-					</h3>
-				</header>
-				<main>
-					<section>
-						<ul class="firstUl">
-							<li>Enemy Wave System</li>
-							<li>Enemy</li>
+		</article>
+		
+		<!-- ----------------- Space Shock ----------------- -->
+		<article class="All Unity">
+			<header>
+				<h1>Space Shock</h1>
+				<h2>Unity C# GitHub
+					<span class="extraInformation"> • Nov 2021 - Dic 2021</span>
+				</h2>
+				<h3>Rythm-like game + Arcade Shooter. Made by me and <a
+						href="https://www.linkedin.com/in/ramon-perez-segarra/" target="_blank">Ramón Pérez
+						Segarra</a>
+				</h3>
+			</header>
+			<main>
+				<section>
+					<ul class="firstUl">
+						<li>Enemy Wave System</li>
+						<li>Enemies</li>
+						<ul>
+							<li>Movement System</li>
+							<li>Health System</li>
+							<li>Destruction System</li>
+						</ul>
+						<li>Player</li>
+						<ul>
+							<li>Movement</li>
+							<li>Death</li>
+							<li>Attack</li>
 							<ul>
-								<li>Movement</li>
-								<li>Death</li>
-								<li>Colour Randomization</li>
-							</ul>
-							<li>Player</li>
-							<ul>
-								<li>Simple Movement</li>
-								<li>Dash Attack</li>
-								<li>Death</li>
-							</ul>
-							<li>Game Feel</li>
-							<ul>
-								<li>Particles</li>
-								<li>Player Dash Colour Change</li>
-								<li>Camera Shake</li>
-								<li>UI</li>
-								<ul>
-									<li>Timer</li>
-									<li>Start State</li>
-									<li>Lose State</li>
-								</ul>
-								<li>Music</li>
+								<li>Bullet Movement</li>
+								<li>Bullet Dead</li>
 							</ul>
 						</ul>
-					</section>
-					<aside>
-
-						<img alt="Meteor Shower Picture" src="assets/gifs/ScapeBox.gif">
-					</aside>
-
-				</main>
-
-			</article>
-			<hr>
-			<!-- ----------------- Space Shock ----------------- -->
-			<article>
-				<header>
-					<h1>Space Shock</h1>
-					<h2>Unity C# GitHub
-						<span class="extraInformation"> • Nov 2021 - Dic 2021</span>
-					</h2>
-					<h3>Rythm-like game + Arcade Shooter. Made by me and <a href="https://www.linkedin.com/in/ramon-perez-segarra/" target="_blank">Ramón Pérez Segarra</a>
-					</h3>
-				</header>
-				<main>
-					<section>
-						<ul class="firstUl">
-							<li>Enemy Wave System</li>
-							<li>Enemies</li>
+						<li>Game Feel</li>
+						<ul>
+							<li>Particles</li>
 							<ul>
-								<li>Movement System</li>
-								<li>Health System</li>
-								<li>Destruction System</li>
+								<li>Ship Smoke</li>
+								<li>Bullet Smoke</li>
+								<li>Ships Explosions</li>
 							</ul>
-							<li>Player</li>
+							<li>Player Rotation when moved</li>
+							<li>Camera Shake</li>
+							<li>UI</li>
 							<ul>
-								<li>Movement</li>
-								<li>Death</li>
-								<li>Attack</li>
-								<ul>
-									<li>Bullet Movement</li>
-									<li>Bullet Dead</li>
-								</ul>
-							</ul>
-							<li>Game Feel</li>
-							<ul>
-								<li>Particles</li>
-								<ul>
-									<li>Ship Smoke</li>
-									<li>Bullet Smoke</li>
-									<li>Ships Explosions</li>
-								</ul>
-								<li>Player Rotation when moved</li>
-								<li>Camera Shake</li>
-								<li>UI</li>
-								<ul>
-									<li>Health Bar</li>
-									<li>Combo Meter</li>
-									<li>Points</li>
-								</ul>
+								<li>Health Bar</li>
+								<li>Combo Meter</li>
+								<li>Points</li>
 							</ul>
 						</ul>
-					</section>
-					<aside>
+					</ul>
+				</section>
+				<aside>
 
-						<img alt="Space Shock Picture" src="assets/gifs/SpaceShock.gif">
-					</aside>
+					<img alt="Space Shock Picture" src="assets/gifs/SpaceShock.gif">
+				</aside>
 
-				</main>
+			</main>
 
-			</article>
+		</article>
 	</main>
 	<footer id="footer"></footer>
+	<script>
+		classNames = new Array(
+			"PS5", "UnrealEngine", "Unity",
+			"OpenGL", "AI", "All");
 
+
+		function changeActiveClass(name) {
+
+			const collection = document.getElementsByClassName("All");
+			for (let j = 0; j < collection.length; j++) {
+				collection[j].style.display = "none";
+			}
+
+
+			const activeArticles = document.getElementsByClassName(name);
+			for (let j = 0; j < activeArticles.length; j++) {
+				activeArticles[j].style.display = "block";
+				console.log(activeArticles[j]);
+			}
+
+
+		}
+
+	</script>
 </body>
 
 </html>
