@@ -1,23 +1,33 @@
+:root {
+  --text: white;
+  --background: black;
+  --strongPrimary: #c38a37;
+  --weakPrimary: #eabe71;
+  --strongSecondary: #2f6568;
+  --weakSecondary: #7d9ea2;
+  --hover: lightgray;
+}
+
 body {
-  background-color: black;
-  color: white;
+  background-color: var(--background);
+  color: var(--text);
 }
 
 h1 {
-  color: #c38a37;
+  color: var(--strongPrimary);
 }
 
 h2 {
-  color: #eabe71;
+  color: var(--weakPrimary);
 
 }
 
 h3 {
-  color: #2f6568;
+  color: var(--strongSecondary);
 }
 
 .extraInformation {
-  color: #7d9ea2;
+  color: var(--weakSecondary);
 }
 
 
@@ -36,23 +46,23 @@ h2 {
 }
 
 .mainHeader a {
-  color: white;
+  color: var(--text);
   text-decoration: none;
 }
 
 /* visited link */
 .mainHeader a:visited {
-  color: white;
+  color: var(--text);
 }
 
 /* mouse over link */
 .mainHeader a:hover {
-  color: gray;
+  color: var(--hover);
 }
 
 /* selected link */
 .mainHeader a:active {
-  color: gray;
+  color: var(--hover);
 }
 
 .mainIndex {
@@ -62,26 +72,26 @@ h2 {
 }
 
 main a {
-  color: #7d9ea2;
+  color: var(--weakSecondary);
 }
 
 /* visited link */
 main a:visited {
-  color: #7d9ea2;
+  color: var(--weakSecondary);
 }
 
 /* mouse over link */
 main a:hover {
-  color: #2f6568;
+  color: var(--strongSecondary);
 }
 
 /* selected link */
 main a:active {
-  color: #2f6568;
+  color: var(--strongSecondary);
 }
 
 footer {
-  position:relative;
+  position: relative;
   text-align: center;
   margin: 0 auto;
   left: 0;
@@ -100,7 +110,7 @@ footer ul {
 }
 
 footer a {
-  color: white;
+  color: var(--text);
   text-decoration: none;
 }
 
@@ -109,11 +119,11 @@ footer p {
 }
 
 ::selection {
-  background-color: white;
-  color: black;
+  background-color: var(--text);
+  color: var(--background);
 }
 
-form  {
+form {
   display: flex;
   overflow: hidden;
   justify-content: center;
@@ -129,13 +139,14 @@ fieldset {
 
 }
 
-input,textarea {
+input,
+textarea {
   width: 100%;
   border-radius: 25px;
 }
 
 textarea {
-  resize:none;
+  resize: none;
   height: 50%;
   max-height: 50vh;
 }
@@ -144,7 +155,8 @@ textarea {
   display: flex;
   justify-content: center;
 }
-.formButtons button{
+
+.formButtons button {
   width: 100%;
   height: 5vh;
   border-radius: 100px;
@@ -174,7 +186,7 @@ textarea {
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  background: #c38a37;
+  background: var(--strongPrimary);
   transform: translate(0%, 25%);
 }
 
@@ -188,24 +200,24 @@ textarea {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: white;
+  background: var(--text);
   border-radius: 10px;
 }
 
 
 ::-webkit-scrollbar-thumb:hover {
-  background: lightgray;
+  background: var(--hover);
 }
 
 @keyframes fireAnimation {
   0% {
     transform: translate(0%, 25%) scale(1);
-    background: #c38a37;
+    background: var(--strongPrimary);
   }
 
   100% {
     transform: translate(-50%, -75%) scale(0);
-    background: #eabe71;
+    background: var(--weakPrimary);
   }
 }
 
@@ -252,7 +264,7 @@ h3 {
   height: 250px;
   top: 0;
   right: 0;
-  background-color: #111;
+  background-color: var(--background);
   overflow-x: hidden;
   transition: 0.5s;
 
@@ -261,7 +273,7 @@ h3 {
 
 .sidepanel button {
   position: absolute;
-  right:0;
+  right: 0;
   margin-top: 30px;
   margin-right: 10px;
 }
@@ -274,14 +286,14 @@ h3 {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: var(--hover);
   display: block;
   transition: 0.3s;
 
 }
 
 .sidepanel a:hover {
-  color: #f1f1f1;
+  color: var(--text);
 }
 
 .sidepanel .closebtn {
@@ -346,15 +358,15 @@ h3 {
   .openbtn {
     font-size: 20px;
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0);
-    color: white;
+    background-color: transparent;
+    color: var(--text);
     padding: 10px 15px;
     border: none;
     float: right;
   }
 
   .openbtn:hover {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: transparent;
   }
 
   .mainHeader ul {
@@ -405,4 +417,3 @@ h3 {
     padding-left: 2%;
   }
 }
-

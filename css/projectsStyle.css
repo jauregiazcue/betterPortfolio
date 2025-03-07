@@ -72,8 +72,6 @@
     display: block;
 }
 
-
-
 .projectsMain aside {
     width: 100%;
     display: flex;
@@ -96,7 +94,7 @@
     border-style: solid;
     border-radius: 5%;
     border-width: 5px;
-    border-color: white;
+    border-color: var(--text);
 }
 
 .projectsMain img {
@@ -140,7 +138,7 @@
         height: 50vh;
         border-radius: 5%;
         border-width: 5px;
-        border-color: white;
+        border-color: var(--text);
     }
 
     .projectsMain img {
@@ -162,10 +160,10 @@
 
 .selection article {
     display: flex;
-    background-color: black;
+    background-color: var(--background);
     border-style: solid;
     border-radius: 5px;
-    border-color: #c38a37;
+    border-color: var(--strongPrimary);
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -173,11 +171,11 @@
 
 .selection button {
     font-size: large;
-    background-color: black;
-    border:none;
-    color:#c38a37;
-}
-.selection button:hover {
-    color:#eabe71;
+    background-color: var(--background);
+    border: none;
+    color: var(--strongPrimary);
 }
 
+.selection button:hover {
+    color: var(--weakPrimary);
+}
