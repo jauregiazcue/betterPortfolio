@@ -151,3 +151,32 @@
         border-width: 5px;
     }
 }
+
+.selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.selection article {
+    display: flex;
+    background-color: white;
+    border-style: solid;
+    border-radius: 5px;
+
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.selection button {
+    font-size: large;
+    background-color: white;
+    border:none;
+}
+.selection button:hover {
+    background-color: lightgrey;
+}
+
